@@ -3,7 +3,7 @@ A Wazuh SIEM lab with 5 custom detection rules for authentication, privilege esc
 A hands on Wazuh SIEM deployment monitoring a Kali Linux endpoint from an Ubuntu Server manager, featuring 5 custom detection rules covering SSH authentication, password changes, privilege escalation, and account activity. 
 # Project Overview
 This project simulates a Security Operations Center (SOC) monitoring setup. A Wazuh Manager, Indexer, and Dashboard were deployed on an Ubuntu Server VM, with a Kali Linux VM enrolled as a monitored agent. Five custom detection rules were written, tested, and validated against real triggered events, and each alert was documented with a triage walkthrough explaining what a SOC analyst would investigate next.
-The goal was to move beyond default/out-of-the-box Wazuh rules and demonstrate the ability to write, debug, and validate custom detection rules through to live alert verification in the dashboard.
+The goal was to move beyond default/out-of-the-box Wazuh rules and demonstrate the ability to write, debug, and validate custom detection rules through to live alert verification in the dashboard. Repository Contents: An xml file containing all the local rules,an alert triage walkthrough document,a wazuh archictecture diagram and screenshots showing each step. The repository contains an xml file containing all the local rules,an alert triage walkthrough document,a wazuh archictecture diagram and screenshots showing each step.
 # Tools Used
 1-Wazuh 4.9 (Manager, Indexer, Dashboard)                                                   
 2-Ubuntu Server (Wazuh Manager host)                                                 
@@ -27,5 +27,3 @@ The goal was to move beyond default/out-of-the-box Wazuh rules and demonstrate t
 4-Triggered each rule live on the Kali agent and confirmed detection in the Wazuh Dashboard’s Threat Hunting view.  
 5-Documented an alert triage walkthrough for all 5 rules, covering what triggered each alert, why it matters from a security perspective, and what a SOC analyst would investigate next.  
 6-Produced a network architecture diagram showing both VMs, their IP addresses, the Host-Only network, and the direction of log flow from agent to manager.  
-
-Repository Contents: An xml file containing all the local rules,an alert triage walkthrough document,a wazuh archictecture diagram and screenshots showing each step.
