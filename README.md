@@ -28,4 +28,4 @@ The goal was to move beyond default/out-of-the-box Wazuh rules and demonstrate t
 5-Documented an alert triage walkthrough for all 5 rules, covering what triggered each alert, why it matters from a security perspective, and what a SOC analyst would investigate next.  
 6-Produced a network architecture diagram showing both VMs, their IP addresses, the Host-Only network, and the direction of log flow from agent to manager.  
 
-# Repository Contents: An xml file containing all the local rules,an alert triage walkthrough document,a wazuh archictecture diagram and screenshots showing each step.
+Repository Contents: An xml file containing all the local rules,an alert triage walkthrough document,a wazuh archictecture diagram and screenshots showing each step.
