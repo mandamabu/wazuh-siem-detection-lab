@@ -1,0 +1,35 @@
+<group name="local,syslog,">
+
+  <rule id="100001" level="7">
+    <if_sid>5716</if_sid>
+    <description>Custom: Multiple failed SSH logins detected</description>
+    <group>authentication_failed,</group>
+  </rule>
+
+  <rule id="100002" level="8">
+    <if_sid>5902</if_sid>
+    <description>Custom: New user account created on system</description>
+    <group>account_changed,</group>
+  </rule>
+
+  <rule id="100003" level="7">
+  <if_sid>5402</if_sid>
+  <description>Custom: User password was changed</description>
+  <group>account_changed,</group>
+ </rule>
+
+  <rule id="100004" level="7">
+  <if_sid>530</if_sid>
+  <match>su: FAILED|su: pam_authenticate</match>
+  <description>Custom: Failed attempt to switch user (su) detected</description>
+  <group>authentication_failed,</group>
+</rule>
+
+  <rule id="100005" level="6">
+    <if_sid>5402</if_sid>
+    <description>Custom: Sudo session opened by user</description>
+    <group>privilege_escalation,</group>
+  </rule>
+
+</group>
+
